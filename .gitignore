@@ -1,0 +1,9 @@
+# ไฟล์และโฟลเดอร์ที่ไม่ควรถูก track ใน instagram-clone
+instagram-clone/node_modules/
+instagram-clone/.env
+instagram-clone/build/
+
+# ไฟล์และโฟลเดอร์ที่ไม่ควรถูก track ใน Server
+Server/node_modules/
+Server/.env
+Server/dist/
