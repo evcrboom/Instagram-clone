@@ -1,0 +1,11 @@
+.timeline {
+    display: flex;
+}
+
+.timeline__left {
+    flex: 70%;
+}
+
+.timeline__right {
+    flex: 30%;
+}
