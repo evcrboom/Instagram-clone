@@ -12,9 +12,15 @@ import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import Avatar from "@mui/material/Avatar";
 import { useLocation } from 'react-router-dom';
 
-function Sidenav() {
+function Sidenav(props) {
   const location = useLocation();
   const  { username }  = location.state || 'Guest';
+  
+
+  const handleCreate = ()=>{
+    props.clicked()
+  };
+
   return (
     <div className="sidenav">
       <img className="sidenav__logo" src={InstagramLogo} alt="instagram-logo" />
@@ -43,7 +49,7 @@ function Sidenav() {
           <FavoriteBorderOutlinedIcon />
           <span>Notifications</span>
         </button>
-        <button className="sidenav__button">
+        <button className="sidenav__button" onClick={handleCreate}>
           <AddBoxOutlinedIcon />
           <span>Create</span>
         </button>
